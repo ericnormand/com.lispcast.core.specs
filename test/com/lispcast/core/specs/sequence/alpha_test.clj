@@ -34,7 +34,7 @@
                (gen/list gen/simple-type)]))
 
 (def gen-non-nthable
-  (gen/such-that #(not (s/valid? :com.lispcast.specs/nthable %))
+  (gen/such-that #(not (s/valid? :com.lispcast.core.specs.alpha/nthable %))
                  (gen/one-of [(gen/map gen/simple-type gen/simple-type)
                               gen/simple-type])))
 
